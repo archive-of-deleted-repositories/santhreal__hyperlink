@@ -1140,6 +1140,7 @@ class TestURL(HyperlinkTestCase):
         ipv4 = URL.from_text("http://127.0.0.1/")
         self.assertEqual(ipv4.to_uri().to_text(), "http://127.0.0.1/")
         self.assertEqual(ipv4.to_uri().host, "127.0.0.1")
+
     def test_netloc_slashes(self):
         # type: () -> None
 
